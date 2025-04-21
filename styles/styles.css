@@ -1,46 +1,36 @@
-@keyframes gradientShift {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-.smooth-mesh-background {
-  position: relative;
-}
-.smooth-mesh-background::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    135deg,
-    #7ab7d9 0%,
-    #6aaac8 20%,
-    #5a9cb7 40%,
-    #4a8ea6 60%,
-    #3a8095 80%,
-    #2a7284 100%
-  );
-  background-size: 400% 400%;
-  animation: gradientShift 25s ease infinite;
-}
 .bg {
   color: #ffffff;
-  background-color: rgba(66, 127, 162, 0.2862745098);
+  background-color: rgba(66, 127, 162, 0.28);
+}
+
+.header {
+  background-color: inherit;
 }
 
 .copyrights {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 20px;
+}
+
+.nav__item {
+  color: #ffffff;
+  font-size: 20px;
 }
 
 .section:has(.test__title) {
